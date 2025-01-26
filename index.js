@@ -10,7 +10,7 @@ function calculateTotalPrice() {
   });
 
   const resultElement = document.getElementById('result');
-  resultElement.innerHTML = `Итого с 20% скидкой: ${totalPrice * 20 / 100} рублей`;
+  resultElement.innerHTML = `Итого с 20% скидкой: ${totalPrice - totalPrice * 20 / 100} рублей`;
 }
 
 document.getElementById('calculate').addEventListener('click', calculateTotalPrice);
